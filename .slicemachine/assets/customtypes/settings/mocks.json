@@ -1,0 +1,78 @@
+{
+  "name": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
+      {
+        "type": "heading1",
+        "content": {
+          "text": "Skill"
+        }
+      }
+    ]
+  },
+  "subtitle": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
+      {
+        "type": "paragraph",
+        "content": {
+          "text": "Laboris veniam Lorem ex ea occaecat."
+        }
+      }
+    ]
+  },
+  "description": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
+      {
+        "type": "paragraph",
+        "content": {
+          "text": "Ipsum sunt sit mollit cillum ut aliqua commodo adipisicing laboris ipsum fugiat est deserunt. Adipisicing aliquip cupidatat aliqua aute voluptate laboris enim elit magna non. Consectetur veniam occaecat in elit cillum officia esse eu sint aliqua veniam anim mollit excepteur cillum."
+        }
+      }
+    ]
+  },
+  "profilePicture": {
+    "__TYPE__": "ImageContent",
+    "origin": {
+      "id": "main",
+      "url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72",
+      "width": 4010,
+      "height": 4010
+    },
+    "url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72?rect=0%2C0%2C4010%2C4010&w=2000&h=2000",
+    "width": 2000,
+    "height": 2000,
+    "edit": {
+      "zoom": 1,
+      "crop": {
+        "x": 0,
+        "y": 0
+      },
+      "background": "transparent"
+    },
+    "thumbnails": {}
+  },
+  "newsletterDescription": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
+      {
+        "type": "paragraph",
+        "content": {
+          "text": "Quis eiusmod minim est adipisicing incididunt qui nulla consequat ea cillum deserunt."
+        }
+      }
+    ]
+  },
+  "newsletterDisclaimer": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
+      {
+        "type": "paragraph",
+        "content": {
+          "text": "Aliqua adipisicing esse officia eiusmod voluptate excepteur sit do qui sunt. Aute deserunt cillum quis ex nostrud eiusmod commodo consectetur velit eu sunt proident ex ullamco aute. Officia ad deserunt deserunt enim aliqua labore."
+        }
+      }
+    ]
+  }
+}
