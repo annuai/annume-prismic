@@ -130,11 +130,11 @@ export const Header = ({
       {/* <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 hover:text-black mr-4">
           Work
         </a> */}
-        <PrismicLink href="https://annu.me/about">
+        <a href="https://annu.me/about">
         <div className="inline-block mt-4 hover:text-mainred mr-4 cursor-pointer transition-all duration-150 ease-out">
           About<span className="hidden lg:inline-block">&nbsp;& Résumé</span>
         </div>
-        </PrismicLink>
+        </a>
         <a href="https://annu.me" className="cursor-pointer inline-block text-sm px-4 py-2 leading-none border rounded text-black border-black hover:border-transparent hover:text-white hover:bg-mainred mt-4 transition-all duration-150 ease-out">
           Home
         </a>
