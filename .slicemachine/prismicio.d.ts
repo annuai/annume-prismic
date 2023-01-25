@@ -430,6 +430,55 @@ type ImageSliceVariation = ImageSliceDefault | ImageSliceWide;
  */
 export type ImageSlice = prismicT.SharedSlice<"image", ImageSliceVariation>;
 /**
+ * Primary content in Markdown → Primary
+ *
+ */
+interface MarkdownSliceDefaultPrimary {
+    /**
+     * Title field in *Markdown → Primary*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: This is where it all begins...
+     * - **API ID Path**: markdown.primary.title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.TitleField;
+    /**
+     * Description field in *Markdown → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: A nice description of your feature
+     * - **API ID Path**: markdown.primary.description
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    description: prismicT.RichTextField;
+}
+/**
+ * Default variation for Markdown Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `Markdown`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type MarkdownSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<MarkdownSliceDefaultPrimary>, never>;
+/**
+ * Slice variation for *Markdown*
+ *
+ */
+type MarkdownSliceVariation = MarkdownSliceDefault;
+/**
+ * Markdown Shared Slice
+ *
+ * - **API ID**: `markdown`
+ * - **Description**: `Markdown`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type MarkdownSlice = prismicT.SharedSlice<"markdown", MarkdownSliceVariation>;
+/**
  * Primary content in Quote → Primary
  *
  */
@@ -522,6 +571,6 @@ declare module "@prismicio/client" {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { ArticleDocumentData, ArticleDocumentDataSlicesSlice, ArticleDocument, NavigationDocumentData, NavigationDocumentDataLinksItem, NavigationDocument, PageDocumentData, PageDocumentDataSlicesSlice, PageDocument, PostsDocumentData, PostsDocumentDataSlicesSlice, PostsDocument, SettingsDocumentData, SettingsDocument, AllDocumentTypes, ContactFormSliceDefault, ContactFormSliceVariation, ContactFormSlice, ImageSliceDefaultPrimary, ImageSliceDefault, ImageSliceWidePrimary, ImageSliceWide, ImageSliceVariation, ImageSlice, QuoteSliceDefaultPrimary, QuoteSliceDefault, QuoteSliceVariation, QuoteSlice, TextSliceDefaultPrimary, TextSliceDefault, TextSliceVariation, TextSlice };
+        export type { ArticleDocumentData, ArticleDocumentDataSlicesSlice, ArticleDocument, NavigationDocumentData, NavigationDocumentDataLinksItem, NavigationDocument, PageDocumentData, PageDocumentDataSlicesSlice, PageDocument, PostsDocumentData, PostsDocumentDataSlicesSlice, PostsDocument, SettingsDocumentData, SettingsDocument, AllDocumentTypes, ContactFormSliceDefault, ContactFormSliceVariation, ContactFormSlice, ImageSliceDefaultPrimary, ImageSliceDefault, ImageSliceWidePrimary, ImageSliceWide, ImageSliceVariation, ImageSlice, MarkdownSliceDefaultPrimary, MarkdownSliceDefault, MarkdownSliceVariation, MarkdownSlice, QuoteSliceDefaultPrimary, QuoteSliceDefault, QuoteSliceVariation, QuoteSlice, TextSliceDefaultPrimary, TextSliceDefault, TextSliceVariation, TextSlice };
     }
 }

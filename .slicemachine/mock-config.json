@@ -111,6 +111,11 @@
       "default": {
         "primary": {}
       }
+    },
+    "Markdown": {
+      "default": {
+        "items": {}
+      }
     }
   }
 }
